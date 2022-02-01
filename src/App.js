@@ -1,6 +1,6 @@
 import { css } from '@emotion/css'
 import { Header } from './components/Header'
-import { Homepage } from './components/Homepage'
+import { HomepageTop } from './components/HomepageTop'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       `}
     >
       <Header />
-      <Homepage />
+      <HomepageTop />
     </div>
   )
 }

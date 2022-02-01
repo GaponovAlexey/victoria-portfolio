@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <div
+    <header
       className={css`
         position: fixed;
         display: flex;
@@ -15,11 +15,11 @@ export const Header = () => {
         border-bottom: 1px solid #828282;
       `}
     >
-      <div>Home</div>
-      <div>About</div>
-      <div>Skills</div>
-      <div>Portfolio</div>
-      <div>Contacts</div>
-    </div>
+      <li>Home</li>
+      <li>About</li>
+      <li>Skills</li>
+      <li>Portfolio</li>
+      <li>Contacts</li>
+    </header>
   )
 }
