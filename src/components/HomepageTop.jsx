@@ -10,8 +10,7 @@ export const HomepageTop = () => {
         padding: 128px 0px 30px 0px;
         align-items: flex-end;
         text-align: end;
-        `}
-
+      `}
     >
       <div
         className={css`
@@ -28,7 +27,7 @@ export const HomepageTop = () => {
       >
         <h1>Viktoria Olegovna</h1>
       </div>
-      <div> UX | UI designer 24 years old, Minsk</div>
+      <div> Pedicure Professional <br/> 33 years old,<br/> Komendantsky Prospekt (Saint Petersburg)</div>
       <div>RU | ENG </div>
     </div>
   )
