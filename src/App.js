@@ -1,5 +1,6 @@
 import { css } from '@emotion/css'
 import { Header } from './components/Header'
+import { HeaderImg } from './components/HeaderImg'
 import { HomepageTop } from './components/HomepageTop'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     >
       <Header />
       <HomepageTop />
+      <HeaderImg />
     </div>
   )
 }
