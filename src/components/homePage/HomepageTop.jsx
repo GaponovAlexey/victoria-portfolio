@@ -7,8 +7,8 @@ export const HomepageTop = () => {
       className={css`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 128px 0px 30px 0px;
-        align-items: flex-end;
+        padding: 108px 0px 15px 0px;
+        align-items: center;
         text-align: end;
       `}
     >
@@ -18,7 +18,6 @@ export const HomepageTop = () => {
           flex-wrap: wrap;
           height: 123px;
           width: 118px;
-          // padding: 128px 0px 30px 0px;
 
           font-family: GilroyBold;
           font-size: 47.3392px;
@@ -27,7 +26,10 @@ export const HomepageTop = () => {
       >
         <h1>Viktoria Olegovna</h1>
       </div>
-      <div> Pedicure Professional <br/> 33 years old,<br/> Komendantsky Prospekt (Saint Petersburg)</div>
+      <div className={css``} >
+        Pedicure Professional <br /> 33 years old,
+        <br /> Komendantsky Prospekt (Saint Petersburg)
+      </div>
       <div>RU | ENG </div>
     </div>
   )

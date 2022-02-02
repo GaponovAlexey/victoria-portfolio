@@ -1,7 +1,9 @@
 import { css } from '@emotion/css'
-import { Header } from './components/Header'
-import { HeaderImg } from './components/HeaderImg'
-import { HomepageTop } from './components/HomepageTop'
+import { About } from './components/About'
+import { Header } from './components/homePage/Header'
+import { HeaderImg } from './components/homePage/HeaderImg'
+import { HomepageTop } from './components/homePage/HomepageTop'
+import { Skills } from './components/Skills'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Header />
       <HomepageTop />
       <HeaderImg />
+      <About />
+      <Skills />
     </div>
   )
 }

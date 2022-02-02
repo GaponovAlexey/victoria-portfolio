@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: 'GilroyMedium', 'GilroyBold';
+  /* background: transparent url('./img/1.jpg')  no-repeat center 60% ; */
+  /* color: #fff; */
 }
 
 li {
@@ -8,11 +10,15 @@ li {
 }
 
 .header__logo-img {
-  background: transparent top local url('./img/3.jpg') center no-repeat center;
-  /* background: green; */
-  top: 0;
-  left: 0;
-  /* object-fit: cover; */
+  background: transparent url('./img/2.jpg') no-repeat center 38%;
+  object-fit: cover;
   width: 960px;
-  height: 200px;
+  height: 300px;
+}
+
+.skils__one {
+  background: transparent url('./img/p1.jpg') no-repeat center  ;
+  object-fit: cover;
+  width: 250px;
+  height: 240px;
 }
