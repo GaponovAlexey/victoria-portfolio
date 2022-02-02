@@ -1,5 +1,5 @@
 import React from 'react'
 
 export const HeaderImg = () => {
-  return <div> sdad </div>
+  return <div className='header__logo-img'></div>
 }

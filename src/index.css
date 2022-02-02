@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'GilroyMedium', 'GilroyBold';
@@ -6,4 +5,14 @@ body {
 
 li {
   list-style-type: none;
+}
+
+.header__logo-img {
+  background: transparent top local url('./img/3.jpg') center no-repeat center;
+  /* background: green; */
+  top: 0;
+  left: 0;
+  /* object-fit: cover; */
+  width: 960px;
+  height: 200px;
 }
