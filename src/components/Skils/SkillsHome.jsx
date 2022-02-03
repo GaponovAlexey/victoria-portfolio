@@ -1,10 +1,18 @@
 import { css } from '@emotion/css'
 import React from 'react'
+import Slider from 'react-slick'
 import { SkilsOnePage } from './SkilsOnePage'
+import { SkilsTwoPage } from './SkilsTwoPage'
 
 export const SkillsHome = () => {
+  const [isSkils, setisSkils] = React.useState(true)
+
   return (
-    <div>
+    <div
+      className={css`
+        padding-bottom: 50px;
+      `}
+    >
       <h2
         className={css`
           font-family: GilroyBold;
@@ -15,10 +23,9 @@ export const SkillsHome = () => {
       >
         Skills
       </h2>
-      <div
-        
-      >
+      <div>
         <SkilsOnePage />
+        {/* <SkilsTwoPage /> */}
       </div>
     </div>
   )

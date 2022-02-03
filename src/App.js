@@ -5,6 +5,10 @@ import { HeaderImg } from './components/homePage/HeaderImg'
 import { HomepageTop } from './components/homePage/HomepageTop'
 import { SkillsHome } from './components/Skils/SkillsHome'
 
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
+
 function App() {
   return (
     <div
