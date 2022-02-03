@@ -16,9 +16,9 @@ li {
   height: 300px;
 }
 
-.skils__one {
-  background: transparent url('./img/p1.jpg') no-repeat center  ;
+.skilimg1 {
   object-fit: cover;
-  width: 250px;
+  position: relative;
+  width: 300px;
   height: 240px;
 }

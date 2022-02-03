@@ -3,7 +3,7 @@ import { About } from './components/About'
 import { Header } from './components/homePage/Header'
 import { HeaderImg } from './components/homePage/HeaderImg'
 import { HomepageTop } from './components/homePage/HomepageTop'
-import { Skills } from './components/Skills'
+import { SkillsHome } from './components/Skils/SkillsHome'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <HomepageTop />
       <HeaderImg />
       <About />
-      <Skills />
+      <SkillsHome />
     </div>
   )
 }

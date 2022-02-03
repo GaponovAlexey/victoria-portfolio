@@ -1,7 +1,8 @@
 import { css } from '@emotion/css'
 import React from 'react'
+import { SkilsOnePage } from './SkilsOnePage'
 
-export const Skills = () => {
+export const SkillsHome = () => {
   return (
     <div>
       <h2
@@ -15,14 +16,9 @@ export const Skills = () => {
         Skills
       </h2>
       <div
-        className={css`
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-        `}
+        
       >
-        <div className='skils__one'></div>
-        <div className='skils__two'></div>
-        <div className='skils__three'></div>
+        <SkilsOnePage />
       </div>
     </div>
   )
