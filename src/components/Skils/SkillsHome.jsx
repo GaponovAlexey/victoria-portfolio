@@ -1,12 +1,8 @@
 import { css } from '@emotion/css'
 import React from 'react'
-import Slider from 'react-slick'
 import { SkilsOnePage } from './SkilsOnePage'
-import { SkilsTwoPage } from './SkilsTwoPage'
 
 export const SkillsHome = () => {
-  const [isSkils, setisSkils] = React.useState(true)
-
   return (
     <div
       className={css`
@@ -19,13 +15,13 @@ export const SkillsHome = () => {
           font-size: 34px;
           line-height: 42px;
           text-align: center;
+          margin-bottom: 15px;
         `}
       >
         Skills
       </h2>
       <div>
         <SkilsOnePage />
-        {/* <SkilsTwoPage /> */}
       </div>
     </div>
   )
