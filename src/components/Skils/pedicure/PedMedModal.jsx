@@ -1,7 +1,7 @@
 import { css } from '@emotion/css'
 import React, { useState } from 'react'
 
-export const PedMedModal = ({setisModalMed}) => {
+export const PedMedModal = () => {
   const [isModalMed, setisModalMed] = useState(true)
 
   return (

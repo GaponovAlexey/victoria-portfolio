@@ -25,7 +25,7 @@ export const SkillsHome = () => {
       <div>
         <SkilsOnePage />
       </div>
-      <PedMedModal  />
+      <PedMedModal />
     </div>
   )
 }
