@@ -1,8 +1,10 @@
 import { css } from '@emotion/css'
 import React from 'react'
+import { PedMedModal } from './pedicure/PedMedModal'
 import { SkilsOnePage } from './SkilsOnePage'
 
 export const SkillsHome = () => {
+  
   return (
     <div
       className={css`
@@ -23,6 +25,7 @@ export const SkillsHome = () => {
       <div>
         <SkilsOnePage />
       </div>
+      <PedMedModal  />
     </div>
   )
 }
