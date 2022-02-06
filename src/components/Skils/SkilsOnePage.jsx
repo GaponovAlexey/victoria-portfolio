@@ -1,16 +1,23 @@
 import { css } from '@emotion/css'
 import React from 'react'
-
-import Slider from 'react-slick'
-
+import { useDispatch, useSelector } from 'react-redux'
 import Skilimg1 from '../../img/Skils/p1.jpg'
 import Skilimg2 from '../../img/Skils/p2.jpg'
 import Skilimg3 from '../../img/Skils/p3.jpg'
 import Skilimg4 from '../../img/Skils/p4.jpg'
+import {
+  isModalMASReducer,
+  isModalMedReducer,
+  isPedModalCOSReducer,
+  isPedModalSmileReducer,
+} from '../../Redux/reducer'
 
 export const SkilsOnePage = () => {
+  const dispatch = useDispatch()
+
   return (
     <div>
+      {/* grid */}
       <div
         className={css`
           display: grid;
@@ -20,7 +27,9 @@ export const SkilsOnePage = () => {
           justify-items: center;
         `}
       >
+        {/* one */}
         <div
+          onClick={() => dispatch(isModalMedReducer(true))}
           className={css`
             position: relative;
             &:hover {
@@ -44,9 +53,10 @@ export const SkilsOnePage = () => {
               font-size: 21px;
             `}
           >
-             Podiatry
+            Podiatry
           </h3>
         </div>
+        {/* {two} */}
         <div
           className={css`
             position: relative;
@@ -57,6 +67,7 @@ export const SkilsOnePage = () => {
           `}
         >
           <img
+            onClick={() => dispatch(isPedModalCOSReducer(true))}
             className='skilimg1'
             src={Skilimg1}
             alt='Skilimg1'
@@ -73,7 +84,9 @@ export const SkilsOnePage = () => {
             Cosmetic pedicure
           </h3>
         </div>
+        {/* three */}
         <div
+          onClick={() => dispatch(isModalMASReducer(true))}
           className={css`
             position: relative;
             &:hover {
@@ -92,10 +105,12 @@ export const SkilsOnePage = () => {
               font-size: 21px;
             `}
           >
-           Massage
+            Massage
           </h3>
         </div>
+        {/* four */}
         <div
+        onClick={() => dispatch(isPedModalSmileReducer(true))}
           className={css`
             position: relative;
             &:hover {

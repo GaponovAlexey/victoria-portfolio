@@ -1,10 +1,12 @@
 import { css } from '@emotion/css'
 import React from 'react'
-import { PedMedModal } from './pedicure/PedMedModal'
+import { ModalMAS } from './modal/ModalMAS'
+import { PedMedModal } from './modal/PedMedModal'
+import { PedModalCOS } from './modal/PedModalCOS'
+import { PedModalSmile } from './modal/PedModalSmile'
 import { SkilsOnePage } from './SkilsOnePage'
 
 export const SkillsHome = () => {
-  
   return (
     <div
       className={css`
@@ -26,6 +28,9 @@ export const SkillsHome = () => {
         <SkilsOnePage />
       </div>
       <PedMedModal />
+      <PedModalCOS />
+      <ModalMAS />
+      <PedModalSmile />
     </div>
   )
 }
