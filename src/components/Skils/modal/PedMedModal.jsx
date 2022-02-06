@@ -11,8 +11,19 @@ export const PedMedModal = () => {
   const [nav2, setNav2] = useState()
 
   return (
-    <div>
+    <div className={css``} onClick={() => dispatch(isModalMedReducer(false))}>
       <div
+        className={css`
+          min-height: 100%;
+          min-width: 100%;
+          top: 0;
+          right: 0;
+          position: fixed;
+          ${!isModalMed ? `visibility: hidden;` : ``}
+        `}
+      ></div>
+      <div
+        onClick={(e) => e.stopPropagation()}
         className={css`
           position: fixed;
           top: 20px;
@@ -28,7 +39,13 @@ export const PedMedModal = () => {
           <h2>Slider Syncing (AsNavFor)</h2>
           <h4>First Slider</h4>
           <Slider asNavFor={nav2} ref={(slider1) => setNav1(slider1)}>
-            <div>
+            <div
+              swipeToSlide={true}
+              className={css`
+                background-color: white;
+                height: 300px;
+              `}
+            >
               <h3>1</h3>
             </div>
             <div>
@@ -55,8 +72,13 @@ export const PedMedModal = () => {
             swipeToSlide={true}
             focusOnSelect={true}
           >
-            <div>
-              <h3>1</h3>
+            <div
+              className={css`
+                background-color: green;
+                height: 100px;
+              `}
+            >
+              <h3>diva</h3>
             </div>
             <div>
               <h3>2</h3>

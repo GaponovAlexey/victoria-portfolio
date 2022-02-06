@@ -27,10 +27,12 @@ export const SkillsHome = () => {
       <div>
         <SkilsOnePage />
       </div>
-      <PedMedModal />
-      <PedModalCOS />
-      <ModalMAS />
-      <PedModalSmile />
+      <div>
+        <PedMedModal />
+        <PedModalCOS />
+        <ModalMAS />
+        <PedModalSmile />
+      </div>
     </div>
   )
 }
