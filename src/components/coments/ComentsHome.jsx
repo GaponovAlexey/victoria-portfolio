@@ -2,27 +2,27 @@ import { css } from '@emotion/css'
 import React from 'react'
 import Slider from 'react-slick'
 
-import com1 from '../../img/koments/1.jpg'
+
 
 export const ComentsHome = () => {
   const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
+    dots: false,
+    slidesToShow: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    // adaptiveHeight: true, 
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
     swipeToSlide: true,
-    beforeChange: function (currentSlide, nextSlide) {
-      console.log('before change', currentSlide, nextSlide)
-    },
-    afterChange: function (currentSlide) {
-      console.log('after change', currentSlide)
-    },
+    // fade: 3,
+    // infinite: true,
+    focusOnSelect: true,
+    initialSlide: true,
   }
 
   return (
-    <div>
+    <div className={css`margin-bottom: 40px;`}>
       <h3
         className={css`
           font-family: GilroyBold;
@@ -48,25 +48,136 @@ export const ComentsHome = () => {
             </h3>
           </div>
           <div>
-            <h3>2</h3>
-            <img src={com1} alt='com1' />
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com2}
+              alt='com2'
+            />
           </div>
           <div>
-            <h3>3</h3>
-            <img src={com1} alt='com1' />
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com3}
+              alt='com3'
+            />
           </div>
           <div>
-            <h3>4</h3>
-            <img src={com1} alt='com1' />
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com4}
+              alt='com4'
+            />
           </div>
           <div>
-            <h3>5</h3>
-            <img src={com1} alt='com1' />
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com5}
+              alt='com5'
+            />
           </div>
           <div>
-            <h3>6</h3>
-            <img src={com1} alt='com1' />
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com6}
+              alt='com6'
+            />
           </div>
+          <div>
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com7}
+              alt='com7'
+            />
+          </div>
+          <div>
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com8}
+              alt='com8'
+            />
+          </div>
+          <div>
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com9}
+              alt='com9'
+            />
+          </div>
+          <div>
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com10}
+              alt='com10'
+            />
+          </div>
+          <div>
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com11}
+              alt='com11'
+            />
+          </div>
+          <div>
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com12}
+              alt='com12'
+            />
+          </div>
+          <div>
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com13}
+              alt='com13'
+            />
+          </div>
+          <div>
+            <img
+              className={css`
+                width: 100%;
+                height: 100%;
+              `}
+              src={com14}
+              alt='com14'
+            />
+          </div>
+          
         </Slider>
       </div>
     </div>
