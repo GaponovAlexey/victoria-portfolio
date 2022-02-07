@@ -5,6 +5,8 @@ import Slider from 'react-slick'
 
 export const ComentsHome = () => {
   const { comentData } = useSelector((state) => state.data)
+  
+
   const settings = {
     dots: false,
     infinite: true,
@@ -44,7 +46,7 @@ export const ComentsHome = () => {
       >
         <h3
           className={css`
-          padding-top: 30px;
+            padding-top: 30px;
             font-family: GilroyBold;
             font-size: 34px;
             line-height: 42px;
@@ -81,6 +83,16 @@ export const ComentsHome = () => {
             ))}
           </Slider>
         </div>
+        <form
+          className={css`
+            height: 20px;
+            background-color: red;
+          `}
+        >
+          <input type='text'  />
+          <input type='text' />
+          <button>send</button>
+        </form>
       </div>
     </div>
   )

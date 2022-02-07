@@ -92,6 +92,9 @@ const reducerData = createSlice({
     isPedModalSmileReducer: (state, { payload }) => {
       state.isPedModalSmile = payload
     },
+    addComents: (state, { payload }) => {
+      state.comentData += payload
+    },
   },
 })
 
@@ -100,6 +103,7 @@ export const {
   isPedModalSmileReducer,
   isPedModalCOSReducer,
   isModalMASReducer,
+  addComents,
 } = reducerData.actions
 
 export default reducerData.reducer

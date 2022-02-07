@@ -1,6 +1,8 @@
 import { css } from '@emotion/css'
 import React from 'react'
 
+import insta from '../../img/svg/insta.svg'
+
 export const Contacts = () => {
   return (
     <div>
@@ -54,6 +56,21 @@ export const Contacts = () => {
               Send message
             </div>
           </div>
+          <div
+            className={css`
+              padding-top: 91px;
+            `}
+          >
+            <img
+              className={css`
+                height: 5%;
+                width: 5%;
+              `}
+              src={insta}
+              alt='insta'
+            />
+          </div>
+          <div className={css`padding-top: 20px;`} >Like me on Instagram</div>
         </div>
       </div>
     </div>
