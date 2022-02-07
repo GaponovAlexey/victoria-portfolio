@@ -8,62 +8,79 @@ export const ComentsHome = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    slidesToShow: 5,
+    autoplay: true,
+    autoplaySpeed: 3000,
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
     swipeToSlide: true,
     // fade: 3,
-    // focusOnSelect: true,
+    focusOnSelect: true,
     initialSlide: true,
   }
 
   return (
     <div
       className={css`
-        margin-bottom: 60px;
-        background-color:  #F6F6F6;
+        position: relative;
       `}
     >
-      <h3
+      <div
         className={css`
-          font-family: GilroyBold;
-          font-size: 34px;
-          line-height: 42px;
-          text-align: center;
-          margin-bottom: 30px;
+          position: absolute;
+          background: #f6f6f6;
+          width: 2000px;
+          left: -500px;
+          height: 380px;
+          z-index: -1;
+          padding-bottom: 40px;
+        `}
+      ></div>
+      <div
+        className={css`
+          margin-bottom: 60px;
         `}
       >
-        Comments
-      </h3>
-      <div>
-        <Slider {...settings}>
-          {comentData.map((coment) => (
-            <div key={coment.user}>
-              <div
-                className={css`
-                  display: flex;
-                  justify-content: space-between;
-                  margin-bottom: 10px;
-                  font-size: 18px;
-                  line-height: 22px;
-                `}
-              >
-                <div className={css``}>{coment.coment}</div>
+        <h3
+          className={css`
+          padding-top: 30px;
+            font-family: GilroyBold;
+            font-size: 34px;
+            line-height: 42px;
+            text-align: center;
+            margin-bottom: 30px;
+          `}
+        >
+          Comments
+        </h3>
+        <div>
+          <Slider {...settings}>
+            {comentData.map((coment) => (
+              <div key={coment.user}>
                 <div
                   className={css`
-                    margin-left: 30px;
-                    font-family: GilroyBold;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    line-height: 22px;
                   `}
                 >
-                  {coment.user}
+                  <div className={css``}>{coment.coment}</div>
+                  <div
+                    className={css`
+                      margin-left: 30px;
+                      font-family: GilroyBold;
+                    `}
+                  >
+                    {coment.user}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   )

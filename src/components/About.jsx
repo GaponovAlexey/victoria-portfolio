@@ -5,34 +5,55 @@ export const About = () => {
   return (
     <div
       className={css`
-        padding-top: 122px;
-        text-align: center;
-        line-height: 42px;
-
+        position: relative;
       `}
     >
-      <h2
+      <div
         className={css`
+          position: absolute;
+          background: #f6f6f6;
+          width: 2000px;
+          left: -500px;
+          height: 500px;
+          z-index: -1;
+        `}
+      ></div>
+      <div
+        className={css`
+          padding-top: 72px;
           text-align: center;
-          font-family: GilroyBold;
-          font-size: 34px;
           line-height: 42px;
+          marign: 0 auto;
         `}
       >
-        About me
-      </h2>
-      <p
-        className={css`
-          font-size: 21px;
-          line-height: 42px;
-          margin-bottom: 107px;
-        `}
-      >
-        Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and
-        everything connected with it. I'm studying at courses "Web and mobile
-        design interfaces" in IT-Academy. Ready to implement excellent projects
-        with wonderful people.
-      </p>
+        <h2
+          className={css`
+            text-align: center;
+            font-family: GilroyBold;
+            font-size: 34px;
+            line-height: 42px;
+          `}
+        >
+          About me
+        </h2>
+        <p
+          className={css`
+            font-size: 21px;
+            line-height: 42px;
+            padding-bottom: 107px;
+          `}
+        >
+          Меня зовут Виктория и я обожаю видеть плоды своей работы. В профессии
+          с 2014 года. Прошла более 20 курсов Провела больше 6000 процедур Не
+          выгораю по трём причинам: Очень люблю то, чем занимаюсь; Постоянно
+          развиваюсь; Работаю в разных направлениях. Получаю второе высшее
+          образование по специальности "психолог" По первому образованию
+          "учитель английского" так что май инглиш из квайт вэл🙃 На этом сайте
+          вы сможете увидеть то, чем я могу быть вам полезна, и, возможно, найти
+          некоторые ответы на свои вопросы по конкретным проблемам. Записаться
+          на процедуру можно здесь.
+        </p>
+      </div>
     </div>
   )
 }

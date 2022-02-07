@@ -20,6 +20,7 @@ export const SkillsHome = () => {
           line-height: 42px;
           text-align: center;
           margin-bottom: 15px;
+          padding-top: 30px;
         `}
       >
         Skills
