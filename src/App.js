@@ -8,6 +8,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { SkillsHome } from './components/Skils/SkillsHome'
 import { ComentsHome } from './components/coments/ComentsHome'
+import { Contacts } from './components/Contacts/Contacts'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <About />
       <SkillsHome />
       <ComentsHome />
+      <Contacts />
     </div>
   )
 }
