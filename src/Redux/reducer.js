@@ -93,7 +93,7 @@ const reducerData = createSlice({
       state.isPedModalSmile = payload
     },
     addComents: (state, { payload }) => {
-      state.comentData += payload
+      state.comentData.push(payload)
     },
   },
 })

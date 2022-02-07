@@ -1,11 +1,12 @@
 import { css } from '@emotion/css'
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
 export const ComentsHome = () => {
   const { comentData } = useSelector((state) => state.data)
-  
+  const [forms, setforms] = useState({})
+  console.log(forms)
 
   const settings = {
     dots: false,
@@ -89,8 +90,16 @@ export const ComentsHome = () => {
             background-color: red;
           `}
         >
-          <input type='text'  />
-          <input type='text' />
+          <input
+            type='text'
+            value={forms}
+            onChange={(e) => setforms(e.target.value)}
+          />
+          <input
+            type='text'
+            value={forms}
+            onChange={(e) => setforms(e.target.value)}
+          />
           <button>send</button>
         </form>
       </div>
