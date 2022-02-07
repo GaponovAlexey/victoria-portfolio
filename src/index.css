@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'GilroyMedium', 'GilroyBold';
@@ -21,4 +20,9 @@ li {
   object-fit: cover;
   width: 352px;
   height: 200px;
+}
+.comment-wrapper {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
 }
