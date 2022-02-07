@@ -8,6 +8,7 @@ export const About = () => {
         padding-top: 122px;
         text-align: center;
         line-height: 42px;
+
       `}
     >
       <h2
