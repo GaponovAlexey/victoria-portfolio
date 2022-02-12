@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-
+//photo
 import photo1 from '../img/VCom/1-min.jpg'
 import photo2 from '../img/VCom/2-min.jpg'
 import photo3 from '../img/VCom/3-min.jpg'
@@ -10,6 +10,15 @@ import photo7 from '../img/VCom/7-min.jpg'
 import photo8 from '../img/VCom/8-min.jpg'
 import photo9 from '../img/VCom/9-min.jpg'
 import photo10 from '../img/VCom/10-min.jpg'
+
+// sert
+import sert1 from '../img/VSertificat/1.jpg'
+import sert2 from '../img/VSertificat/2.jpg'
+import sert3 from '../img/VSertificat/3.jpg'
+import sert4 from '../img/VSertificat/4.jpg'
+// import sert5 from '../img/VSertificat/5.jpg'
+import sert6 from '../img/VSertificat/6.jpg'
+import sert7 from '../img/VSertificat/7.jpg'
 
 const initialState = {
   isModalMed: false,
@@ -96,6 +105,15 @@ const initialState = {
     { id: 8, photo: photo8 },
     { id: 9, photo: photo9 },
     { id: 10, photo: photo10 },
+  ],
+  Certificates: [
+    { id: 1, certificate: sert1 },
+    { id: 2, certificate: sert2 },
+    { id: 3, certificate: sert3 },
+    { id: 4, certificate: sert4 },
+    // { id: 5, certificate: sert5 },
+    { id: 6, certificate: sert6 },
+    { id: 7, certificate: sert7 },
   ],
 }
 

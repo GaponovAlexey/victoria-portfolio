@@ -49,7 +49,6 @@ export const SkilsOnePage = () => {
               position: absolute;
               top: 0;
               left: 70%;
-              font-family: GilroyBold;
               font-size: 21px;
             `}
           >
@@ -77,7 +76,6 @@ export const SkilsOnePage = () => {
               position: absolute;
               top: 0;
               left: 70%;
-              font-family: GilroyBold;
               font-size: 21px;
             `}
           >
@@ -101,7 +99,6 @@ export const SkilsOnePage = () => {
               position: absolute;
               top: 0;
               left: 70%;
-              font-family: GilroyBold;
               font-size: 21px;
             `}
           >
@@ -110,7 +107,7 @@ export const SkilsOnePage = () => {
         </div>
         {/* four */}
         <div
-        onClick={() => dispatch(isPedModalSmileReducer(true))}
+          onClick={() => dispatch(isPedModalSmileReducer(true))}
           className={css`
             position: relative;
             &:hover {
@@ -125,7 +122,6 @@ export const SkilsOnePage = () => {
               position: absolute;
               top: 0;
               left: 70%;
-              font-family: GilroyBold;
               font-size: 21px;
             `}
           >

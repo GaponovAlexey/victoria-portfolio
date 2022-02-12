@@ -20,8 +20,8 @@ export const PedMedModal = () => {
           right: 0;
           position: fixed;
           ${!isModalMed ? `visibility: hidden;` : ``}
-        `}
-      ></div>
+          `}
+          ></div>
       <div
         onClick={(e) => e.stopPropagation()}
         className={css`

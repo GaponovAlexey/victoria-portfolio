@@ -20,6 +20,7 @@ li {
   object-fit: cover;
   width: 352px;
   height: 200px;
+  border-radius: 5px;
 }
 .comment-wrapper {
   /* display: flex; */

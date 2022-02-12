@@ -1,19 +1,17 @@
 import { css } from '@emotion/css'
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
-export const ComentsPhoto = () => {
-  const { comentData, comentImg } = useSelector((state) => state.data)
+export const Certificates = () => {
+  const { Certificates } = useSelector((state) => state.data)
 
   const settings = {
     focusOnSelect: true,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 4,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    speed: 1000,
+    speed: 500,
     dots: true,
   }
 
@@ -26,7 +24,7 @@ export const ComentsPhoto = () => {
       <div
         className={css`
           position: absolute;
-          background: #f6f6f6;
+          background: #fff;
           width: 2000px;
           left: -500px;
           height: 480px;
@@ -49,42 +47,24 @@ export const ComentsPhoto = () => {
             margin-bottom: 30px;
           `}
         >
-          Comments
+          Certificates
         </h3>
         <div>
           <Slider {...settings}>
-            {comentImg.map((coment) => (
+            {Certificates.map((coment) => (
               <div key={coment.id}>
                 <img
                   className={css`
-                    width: 200px;
-                    height: 380px;
+                    width: 470px;
+                    height: 400px;
                   `}
-                  src={coment.photo}
-                  alt='ph1'
+                  src={coment.certificate}
+                  alt='sertificate'
                 />
               </div>
             ))}
           </Slider>
         </div>
-        {/* <form
-          className={css`
-            height: 20px;
-            background-color: red;
-          `}
-        >
-          <input
-            type='text'
-            value={forms}
-            onChange={(e) => setforms(e.target.value)}
-          />
-          <input
-            type='text'
-            value={forms}
-            onChange={(e) => setforms(e.target.value)}
-          />
-          <button>send</button>
-        </form> */}
       </div>
     </div>
   )
