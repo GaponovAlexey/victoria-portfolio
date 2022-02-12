@@ -14,8 +14,6 @@ export const ModalMAS = () => {
     <div className={css``} onClick={() => dispatch(isModalMASReducer(false))}>
       <div
         className={css`
-          min-height: 100%;
-          min-width: 100%;
           top: 0;
           right: 0;
           position: fixed;
@@ -40,7 +38,6 @@ export const ModalMAS = () => {
           <h4>First Slider</h4>
           <Slider asNavFor={nav2} ref={(slider1) => setNav1(slider1)}>
             <div
-              swipeToSlide={true}
               className={css`
                 background-color: white;
                 height: 300px;
@@ -69,7 +66,6 @@ export const ModalMAS = () => {
             asNavFor={nav1}
             ref={(slider2) => setNav2(slider2)}
             slidesToShow={4}
-            swipeToSlide={true}
             focusOnSelect={true}
           >
             <div

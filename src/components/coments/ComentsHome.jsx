@@ -16,7 +16,6 @@ export const ComentsHome = () => {
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
-    swipeToSlide: true,
     // fade: 3,
     focusOnSelect: true,
     initialSlide: true,

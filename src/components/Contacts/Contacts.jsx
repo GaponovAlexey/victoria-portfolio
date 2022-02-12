@@ -53,7 +53,9 @@ export const Contacts = () => {
                 color: white;
               `}
             >
-              Send message
+              <a href='https://wa.me/79811654228?text=Я%20хочу%20в%20спросить'>
+                Send message
+              </a>
             </div>
           </div>
           <div
@@ -61,16 +63,24 @@ export const Contacts = () => {
               padding-top: 91px;
             `}
           >
-            <img
-              className={css`
-                height: 5%;
-                width: 5%;
-              `}
-              src={insta}
-              alt='insta'
-            />
+            <a href='https://www.instagram.com/pedicurecomenda/'>
+              <img
+                className={css`
+                  height: 5%;
+                  width: 5%;
+                `}
+                src={insta}
+                alt='insta'
+              />
+            </a>
           </div>
-          <div className={css`padding-top: 20px;`} >Like me on Instagram</div>
+          <div
+            className={css`
+              padding-top: 20px;
+            `}
+          >
+            Like me on Instagram
+          </div>
         </div>
       </div>
     </div>

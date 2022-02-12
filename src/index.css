@@ -8,6 +8,10 @@ body {
 li {
   list-style-type: none;
 }
+a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .header__logo-img {
   background: transparent url('./img/2.jpg') no-repeat center 38%;

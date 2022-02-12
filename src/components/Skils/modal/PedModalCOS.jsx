@@ -46,7 +46,6 @@ export const PedModalCOS = () => {
               <h4>First Slider</h4>
               <Slider asNavFor={nav2} ref={(slider1) => setNav1(slider1)}>
                 <div
-                  swipeToSlide={true}
                   className={css`
                     background-color: white;
                     height: 300px;
@@ -75,7 +74,6 @@ export const PedModalCOS = () => {
                 asNavFor={nav1}
                 ref={(slider2) => setNav2(slider2)}
                 slidesToShow={4}
-                swipeToSlide={true}
                 focusOnSelect={true}
               >
                 <div
