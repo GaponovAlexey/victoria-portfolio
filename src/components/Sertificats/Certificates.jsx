@@ -19,13 +19,12 @@ export const Certificates = () => {
     <div
       className={css`
         position: relative;
+        background: #fff;
       `}
     >
       <div
         className={css`
           position: absolute;
-          background: #fff;
-          width: 2000px;
           left: -500px;
           height: 480px;
           z-index: -1;
