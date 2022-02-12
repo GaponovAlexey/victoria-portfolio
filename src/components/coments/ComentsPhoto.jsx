@@ -7,13 +7,11 @@ export const ComentsPhoto = () => {
   const { comentData, comentImg } = useSelector((state) => state.data)
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    slidesToShow: 5,
+    speed: 500,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    swipeToSlide: true,
-    // focusOnSelect: true,
-    // initialSlide: true,
   }
 
   return (
@@ -54,24 +52,14 @@ export const ComentsPhoto = () => {
           <Slider {...settings}>
             {comentImg.map((coment) => (
               <div key={coment.id}>
-                <div
+                <img
                   className={css`
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 10px;
-                    font-size: 18px;
-                    line-height: 22px;
+                    width: 200px;
+                    height: 380px;
                   `}
-                >
-                  <div
-                    className={css`
-                      margin-left: 30px;
-                      font-family: GilroyBold;
-                    `}
-                  >
-                    <img src={coment.photo} alt='ph1' />
-                  </div>
-                </div>
+                  src={coment.photo}
+                  alt='ph1'
+                />
               </div>
             ))}
           </Slider>

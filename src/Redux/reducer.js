@@ -1,5 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+import photo1 from '../img/VCom/1-min.jpg'
+import photo2 from '../img/VCom/2-min.jpg'
+import photo3 from '../img/VCom/3-min.jpg'
+import photo4 from '../img/VCom/4-min.jpg'
+import photo5 from '../img/VCom/5-min.jpg'
+import photo6 from '../img/VCom/6-min.jpg'
+import photo7 from '../img/VCom/7-min.jpg'
+import photo8 from '../img/VCom/8-min.jpg'
+import photo9 from '../img/VCom/9-min.jpg'
+import photo10 from '../img/VCom/10-min.jpg'
+
 const initialState = {
   isModalMed: false,
   isPedModalCOS: false,
@@ -75,9 +86,17 @@ const initialState = {
     },
   ],
   comentImg: [
-    { id: 1, photo: '../img/VCom/1-min.jpg' },
-    { id: 2, photo: '../img/VCom/2-min.jpg' },
-],
+    { id: 1, photo: photo1 },
+    { id: 2, photo: photo2 },
+    { id: 3, photo: photo3 },
+    { id: 4, photo: photo4 },
+    { id: 5, photo: photo5 },
+    { id: 6, photo: photo6 },
+    { id: 7, photo: photo7 },
+    { id: 8, photo: photo8 },
+    { id: 9, photo: photo9 },
+    { id: 10, photo: photo10 },
+  ],
 }
 
 const reducerData = createSlice({
