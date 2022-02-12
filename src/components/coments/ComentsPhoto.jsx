@@ -3,23 +3,17 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
-export const ComentsHome = () => {
-  const { comentData } = useSelector((state) => state.data)
-  const [forms, setforms] = useState({})
+export const ComentsPhoto = () => {
+  const { comentData, comentImg } = useSelector((state) => state.data)
 
   const settings = {
     dots: false,
     infinite: true,
     slidesToShow: 5,
-    autoplay: true,
-    autoplaySpeed: 3000,
     slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: true,
     swipeToSlide: true,
-    // fade: 3,
-    focusOnSelect: true,
-    initialSlide: true,
+    // focusOnSelect: true,
+    // initialSlide: true,
   }
 
   return (
@@ -58,8 +52,8 @@ export const ComentsHome = () => {
         </h3>
         <div>
           <Slider {...settings}>
-            {comentData.map((coment) => (
-              <div key={coment.user}>
+            {comentImg.map((coment) => (
+              <div key={coment.id}>
                 <div
                   className={css`
                     display: flex;
@@ -69,14 +63,13 @@ export const ComentsHome = () => {
                     line-height: 22px;
                   `}
                 >
-                  <div className={css``}>{coment.coment}</div>
                   <div
                     className={css`
                       margin-left: 30px;
                       font-family: GilroyBold;
                     `}
                   >
-                    {coment.user}
+                    <img src={coment.photo} alt='ph1' />
                   </div>
                 </div>
               </div>

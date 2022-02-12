@@ -74,6 +74,10 @@ const initialState = {
       user: 'Надежда ',
     },
   ],
+  comentImg: [
+    { id: 1, photo: '../img/VCom/1-min.jpg' },
+    { id: 2, photo: '../img/VCom/2-min.jpg' },
+],
 }
 
 const reducerData = createSlice({
