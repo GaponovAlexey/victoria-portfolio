@@ -16,9 +16,9 @@ import sert1 from '../img/VSertificat/1.jpg'
 import sert2 from '../img/VSertificat/2.jpg'
 import sert3 from '../img/VSertificat/3.jpg'
 import sert4 from '../img/VSertificat/4.jpg'
-// import sert5 from '../img/VSertificat/5.jpg'
 import sert6 from '../img/VSertificat/6.jpg'
 import sert7 from '../img/VSertificat/7.jpg'
+// const video1 = 'https://www.youtube.com/watch?v=YTNvrTUrlro'
 
 const initialState = {
   isModalMed: false,
@@ -107,13 +107,12 @@ const initialState = {
     { id: 10, photo: photo10 },
   ],
   Certificates: [
-    { id: 1, certificate: sert1 },
-    { id: 2, certificate: sert2 },
-    { id: 3, certificate: sert3 },
-    { id: 4, certificate: sert4 },
-    // { id: 5, certificate: sert5 },
-    { id: 6, certificate: sert6 },
-    { id: 7, certificate: sert7 },
+    { id: 4, certificate: sert3 },
+    { id: 2, certificate: sert1 },
+    { id: 3, certificate: sert2 },
+    { id: 6, certificate: sert4 },
+    { id: 7, certificate: sert6 },
+    { id: 8, certificate: sert7 },
   ],
 }
 

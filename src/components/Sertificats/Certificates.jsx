@@ -51,6 +51,35 @@ export const Certificates = () => {
         </h3>
         <div>
           <Slider {...settings}>
+            <div
+              className={css`
+                position: relative;
+                margin: o auto;
+                width: 470px;
+                height: 400px;
+              `}
+            >
+              <div
+                className={css`
+                  padding-top: 56.25%;
+                `}
+              >
+                <iframe
+                  className={css`
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  `}
+                  src='https://www.youtube.com/embed/YTNvrTUrlro'
+                  title='YouTube video player'
+                  frameborder='0'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
             {Certificates.map((coment) => (
               <div key={coment.id}>
                 <img
