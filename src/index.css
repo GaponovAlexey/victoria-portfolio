@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'GilroyMedium', 'GilroyBold';
+  padding: 0 16px;
   /* background: transparent url('./img/1.jpg')  no-repeat center 60% ; */
   /* color: #fff; */
 }

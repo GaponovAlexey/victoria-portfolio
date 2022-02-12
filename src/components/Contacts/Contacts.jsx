@@ -53,7 +53,7 @@ export const Contacts = () => {
                 color: white;
               `}
             >
-              <a href='https://wa.me/79811654228?text=Я%20хочу%20в%20спросить'>
+              <a href='https://wa.me/79811654228?text=Я%20хочу%20у%20вас%20спросить'>
                 Send message
               </a>
             </div>
