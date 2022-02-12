@@ -12,7 +12,7 @@ export const About = () => {
         className={css`
           position: absolute;
           background: #f6f6f6;
-          width: 2000px;
+          padding: 100%;
           left: -500px;
           height: 500px;
           z-index: -1;

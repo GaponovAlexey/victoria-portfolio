@@ -11,7 +11,8 @@ export const SkillsHome = () => {
     <div
       className={css`
         padding-bottom: 50px;
-        border-radius: 51px;
+        border-radius: 5px;
+        background-color: #fff;
       `}
     >
       <h2
