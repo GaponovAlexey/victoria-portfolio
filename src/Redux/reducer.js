@@ -21,6 +21,7 @@ import sert7 from '../img/VSertificat/7.jpg'
 // const video1 = 'https://www.youtube.com/watch?v=YTNvrTUrlro'
 
 const initialState = {
+  LanguageENG: false,
   isModalMed: false,
   isPedModalCOS: false,
   isModalMAS: false,
@@ -135,6 +136,9 @@ const reducerData = createSlice({
     addComents: (state, { payload }) => {
       state.comentData.push(payload)
     },
+    isLanguageENG: (state, { payload }) => {
+      state.LanguageENG = payload
+    },
   },
 })
 
@@ -144,6 +148,7 @@ export const {
   isPedModalCOSReducer,
   isModalMASReducer,
   addComents,
+  isLanguageENG,
 } = reducerData.actions
 
 export default reducerData.reducer
