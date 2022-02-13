@@ -16,9 +16,6 @@ a {
 
 .header__logo-img {
   background: transparent url('./img/2.jpg') no-repeat center 38%;
-  object-fit: cover;
-  width: 960px;
-  height: 300px;
 }
 
 .skilimg1 {

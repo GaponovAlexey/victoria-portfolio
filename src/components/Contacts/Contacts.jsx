@@ -14,6 +14,7 @@ export const Contacts = () => {
             font-size: 34px;
             line-height: 42px;
             text-align: center;
+            
           `}
         >
           Contacts
