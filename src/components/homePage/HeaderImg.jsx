@@ -10,26 +10,25 @@ export const HeaderImg = () => {
         padding-bottom: 30px;
       `}
     >
-      <div className={css``}>
-        <img
-          className={css`
-            object-fit: cover;
-            width: 960px;
-            height: 300px;
-            @media (min-width: 768px) {
-              min-width: 660px;
-            }
-            @media (min-width: 567px) {
-            min-width: 660px;
-            }
-            @media (min-width: 420px) {
-              min-width: 660px;
-            }
-          `}
-          src={logoImg}
-          alt='logo'
-        />
-      </div>
+      <img
+        className={css`
+          object-fit: cover;
+          width: 960px;
+          height: 300px;
+          padding-top: 20px;
+          // @media (min-width: 768px) {
+          //   max-width: 650px;
+          // }
+          // @media (min-width: 567px) {
+          //   max-width: 650px;
+          // }
+          // @media (min-width: 420px) {
+          //   max-width: 650px;
+          // }
+        `}
+        src={logoImg}
+        alt='logo'
+      />
     </div>
   )
 }

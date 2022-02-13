@@ -10,6 +10,15 @@ export const HomepageTop = () => {
         padding: 108px 0px 15px 0px;
         align-items: center;
         text-align: end;
+        // @media (min-width: 768px) {
+        //   max-width: 650px;
+        // }
+        // @media (min-width: 567px) {
+        //   max-width: 650px;
+        // }
+        // @media (min-width: 420px) {
+        //   max-width: 650px;
+        // }
       `}
     >
       <div
