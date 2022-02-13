@@ -1,5 +1,6 @@
 import { css } from '@emotion/css'
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { ModalMAS } from './modal/ModalMAS'
 import { PedMedModal } from './modal/PedMedModal'
 import { PedModalCOS } from './modal/PedModalCOS'
@@ -7,6 +8,7 @@ import { PedModalSmile } from './modal/PedModalSmile'
 import { SkilsOnePage } from './SkilsOnePage'
 
 export const SkillsHome = () => {
+  const { LanguageENG } = useSelector((state) => state.data)
   return (
     <div
       className={css`
@@ -25,7 +27,7 @@ export const SkillsHome = () => {
           padding-top: 30px;
         `}
       >
-        Skills
+        {LanguageENG ? 'Skills' : "Навыки"}
       </h2>
       <div>
         <SkilsOnePage />

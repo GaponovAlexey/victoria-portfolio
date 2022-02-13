@@ -4,8 +4,9 @@ import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
 export const ComentsPhoto = () => {
-  const { comentData, comentImg } = useSelector((state) => state.data)
-
+  const { comentData, comentImg, LanguageENG } = useSelector(
+    (state) => state.data
+  )
   const settings = {
     focusOnSelect: true,
     infinite: true,
@@ -48,7 +49,7 @@ export const ComentsPhoto = () => {
             margin-bottom: 30px;
           `}
         >
-          Comments
+          {LanguageENG ? 'Comments' : 'Отзывы'}
         </h3>
         <div>
           <Slider {...settings}>

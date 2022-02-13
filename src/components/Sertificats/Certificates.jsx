@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
 export const Certificates = () => {
-  const { Certificates } = useSelector((state) => state.data)
+  const { Certificates, LanguageENG } = useSelector((state) => state.data)
 
   const settings = {
     focusOnSelect: true,
@@ -46,7 +46,7 @@ export const Certificates = () => {
             margin-bottom: 30px;
           `}
         >
-          Certificates
+          {LanguageENG ? 'Certificates' : 'Сертификаты'}
         </h3>
         <div>
           <Slider {...settings}>
@@ -54,7 +54,7 @@ export const Certificates = () => {
               className={css`
                 position: relative;
                 margin: o auto;
-                width: 470px;
+                width: 370px;
                 height: 400px;
               `}
             >

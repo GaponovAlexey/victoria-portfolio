@@ -1,9 +1,11 @@
 import { css } from '@emotion/css'
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 import insta from '../../img/svg/insta.svg'
 
 export const Contacts = () => {
+  const { LanguageENG } = useSelector((state) => state.data)
   return (
     <div>
       <div>
@@ -14,10 +16,9 @@ export const Contacts = () => {
             font-size: 34px;
             line-height: 42px;
             text-align: center;
-            
           `}
         >
-          Contacts
+          {LanguageENG ? 'Contacts' : 'Контакты'}
         </h2>
         <div
           className={css`
@@ -33,7 +34,9 @@ export const Contacts = () => {
               margin-top: 20px;
             `}
           >
-            Want to know more or just chat? You are welcome!
+            {LanguageENG
+              ? 'Want to know more or just chat? You are welcome!'
+              : 'Хотите узнать больше или просто спросить? Пожалуйста! '}
           </div>
           <div
             className={css`
@@ -43,21 +46,21 @@ export const Contacts = () => {
               margin-top: 30px;
             `}
           >
-            <div
-              className={css`
-                width: 180.5px;
-                height: 42px;
-                justify-content: center;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                color: white;
-              `}
-            >
-              <a href='https://wa.me/79811654228?text=Я%20хочу%20у%20вас%20спросить'>
-                Send message
-              </a>
-            </div>
+            <a href='https://wa.me/79811654228?text=Я%20хочу%20у%20вас%20спросить'>
+              <div
+                className={css`
+                  width: 180.5px;
+                  height: 42px;
+                  justify-content: center;
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  color: white;
+                `}
+              >
+                {LanguageENG ? 'Send message' : 'WhatsApp'}
+              </div>
+            </a>
           </div>
           <div
             className={css`

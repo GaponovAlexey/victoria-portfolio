@@ -11,7 +11,7 @@ export const ModalMAS = () => {
   const [nav2, setNav2] = useState()
 
   return (
-    <div className={css``} onClick={() => dispatch(isModalMASReducer(false))}>
+    <div  onClick={() => dispatch(isModalMASReducer(false))}>
       <div
         className={css`
           top: 0;

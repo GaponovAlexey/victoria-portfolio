@@ -28,7 +28,7 @@ export const HomepageTop = () => {
           line-height: 59px;
         `}
       >
-        <h1>Viktoria Olegovna</h1>
+        {LanguageENG ? <h1>Viktoria Olegovna</h1> : <h1>Виктория Олеговна</h1>}
       </div>
       {LanguageENG ? (
         <div>
@@ -38,7 +38,7 @@ export const HomepageTop = () => {
       ) : (
         <div>
           Профессиональный педикюр <br /> 33 года, 5 лет стажа
-          <br /> Komendantsky Prospekt (Saint Petersburg)
+          <br /> Комендантский проспект (Санкт Петербург)
         </div>
       )}
       <div
