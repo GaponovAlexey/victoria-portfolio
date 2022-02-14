@@ -7,17 +7,17 @@ export const About = () => {
   return (
     <div
       className={css`
-        position: relative;
+        @media (max-width: 768px) {
+          max-width: 710px;
+        }
+        @media (max-width: 567px) {
+          max-width: 520px;
+        }
+        @media (max-width: 420px) {
+          max-width: 350px;
+        }
       `}
     >
-      <div
-        className={css`
-          position: absolute;
-          background: #f6f6f6;
-          height: 500px;
-          z-index: -1;
-        `}
-      ></div>
       <div
         className={css`
           padding-top: 72px;

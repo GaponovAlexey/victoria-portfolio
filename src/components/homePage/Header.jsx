@@ -4,9 +4,8 @@ import { useSelector } from 'react-redux'
 
 export const Header = () => {
   const { LanguageENG } = useSelector((state) => state.data)
+  const [Isactive, setIsactive] = useState(true)
 
-  const [Isactive, setIsactive] = useState(false)
-  console.log(Isactive)
   return (
     <header
       className={css`
@@ -14,43 +13,71 @@ export const Header = () => {
         z-index: 20;
       `}
     >
-      {!Isactive ? (
-        <div
-          className={css`
-            ${Isactive &&
-            `@media (max-width: 767px) {
-                display: none;
-              }`}
-            ${!Isactive &&
-            `position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000`}
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid #828282;
-            background-color: rgba(255, 255, 255, 0.2);
-            width: 960px;
-            padding: 33px 0px 32px 0px;
-            background-color: rgba(255, 255, 255, 0);
-          `}
-        >
-          <li>{LanguageENG ? 'Home' : 'Главная'}</li>
-          <li>{LanguageENG ? 'About' : 'Кто Я'}</li>
-          <li>{LanguageENG ? 'Skills' : 'Навыки'}</li>
-          <li>{LanguageENG ? 'Comments' : 'Отзывы'}</li>
-          <li>{LanguageENG ? 'Certificates' : 'Сертификаты'}</li>
-          <li>{LanguageENG ? 'Contacts' : 'Контакты'}</li>
-          <li>{LanguageENG ? 'Map' : 'Как меня найти'}</li>
-        </div>
-      ) : (
-        <div></div>
-      )}
+      <div
+        className={css`
+          ${Isactive &&
+          `@media (max-width: 769px) {
+              display: none;
+            }`}
+          ${!Isactive &&
+          `@media (max-width: 769px) {
+            position: fixed;
+            background-color: #000;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            color: white;
+            display: inherit;
+            padding: 50px;
+            font-size: 42px;
+            li {
+              margin-bottom: 30px;
+            }
+           }`}
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #828282;
+          background-color: rgba(255, 255, 255, 0.2);
+          width: 960px;
+          padding: 33px 0px 32px 0px;
+          background-color: rgba(255, 255, 255, 0);
+        `}
+      >
+        {!Isactive && (
+          <div
+            onClick={() => setIsactive(!Isactive)}
+            className={css`
+              ${Isactive &&
+              `@media (max-width: 768px) {
+                  display: none;
+                }`}
+              position: fixed;
+              top: 20px;
+              right: 20px;
+              color: red;
+            `}
+          >
+            &#10060;
+          </div>
+        )}
+        <li>{LanguageENG ? 'Home' : 'Главная'}</li>
+        <li>{LanguageENG ? 'About' : 'Обо мне'}</li>
+        <li>{LanguageENG ? 'Skills' : 'Навыки'}</li>
+        <li>{LanguageENG ? 'Comments' : 'Отзывы'}</li>
+        <li>{LanguageENG ? 'Certificates' : 'Сертификаты'}</li>
+        <li>{LanguageENG ? 'Contacts' : 'Контакты'}</li>
+        <li>{LanguageENG ? 'Map' : 'Как меня найти'}</li>
+      </div>
+
       <div
         onClick={() => setIsactive(!Isactive)}
         className={css`
           position: fixed;
           top: 15px;
-          @media (min-width: 767px) {
+          @media (min-width: 769px) {
             display: none;
           }
         `}

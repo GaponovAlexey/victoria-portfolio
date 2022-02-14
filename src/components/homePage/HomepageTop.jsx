@@ -14,6 +14,15 @@ export const HomepageTop = () => {
         grid-template-columns: repeat(3, 1fr);
         padding: 108px 0px 15px 0px;
         align-items: center;
+        @media (max-width: 768px) {
+          max-width: 710px;
+        }
+        @media (max-width: 567px) {
+          max-width: 520px;
+        }
+        @media (max-width: 420px) {
+          max-width: 350px;
+        }
       `}
     >
       <div
@@ -22,13 +31,31 @@ export const HomepageTop = () => {
           flex-wrap: wrap;
           height: 123px;
           width: 118px;
-
           font-family: GilroyBold;
           font-size: 47.3392px;
           line-height: 59px;
         `}
       >
-        {LanguageENG ? <h1>Viktoria Olegovna</h1> : <h1>Виктория Олеговна</h1>}
+        <div className={css`
+         @media (max-width: 768px) {
+          max-width: 740px;
+          font-size: 40px;
+        }
+        @media (max-width: 567px) {
+          max-width: 520px;
+          font-size: 30px;
+        }
+        @media (max-width: 420px) {
+          max-width: 350px;
+          font-size: 20px;
+        }
+        `} >
+          {LanguageENG ? (
+            <h1>Viktoria Olegovna</h1>
+          ) : (
+            <h1>Виктория Олеговна</h1>
+          )}
+        </div>
       </div>
       {LanguageENG ? (
         <div>

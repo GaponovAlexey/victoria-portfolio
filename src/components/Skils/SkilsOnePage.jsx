@@ -25,6 +25,7 @@ export const SkilsOnePage = () => {
           grid-row-gap: 30px;
           grid-template-columns: repeat(2, 1fr);
           justify-items: center;
+          
         `}
       >
         {/* one */}
