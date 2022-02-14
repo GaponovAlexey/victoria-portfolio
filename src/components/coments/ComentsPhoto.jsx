@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
 export const ComentsPhoto = () => {
-  const { comentData, comentImg, LanguageENG } = useSelector(
+  const { comentImg, LanguageENG } = useSelector(
     (state) => state.data
   )
   const settings = {
@@ -67,24 +67,7 @@ export const ComentsPhoto = () => {
             ))}
           </Slider>
         </div>
-        {/* <form
-          className={css`
-            height: 20px;
-            background-color: red;
-          `}
-        >
-          <input
-            type='text'
-            value={forms}
-            onChange={(e) => setforms(e.target.value)}
-          />
-          <input
-            type='text'
-            value={forms}
-            onChange={(e) => setforms(e.target.value)}
-          />
-          <button>send</button>
-        </form> */}
+
       </div>
     </div>
   )
