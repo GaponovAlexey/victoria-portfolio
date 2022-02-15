@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/victoria-portfolio/static/css/main.ad0b8118.css",
-    "main.js": "/victoria-portfolio/static/js/main.9289f010.js",
+    "main.js": "/victoria-portfolio/static/js/main.6057c69e.js",
     "static/media/4.jpg": "/victoria-portfolio/static/media/4.70ed71829f44c9277c67.jpg",
     "static/media/1.jpg": "/victoria-portfolio/static/media/1.5ffa49049e1d612a7d47.jpg",
     "static/media/2.jpg": "/victoria-portfolio/static/media/2.9ba369beaf1f62acc3b5.jpg",
@@ -32,10 +32,10 @@
     "static/media/insta.svg": "/victoria-portfolio/static/media/insta.7e802eefab735442ca661298d26c7a2f.svg",
     "index.html": "/victoria-portfolio/index.html",
     "main.ad0b8118.css.map": "/victoria-portfolio/static/css/main.ad0b8118.css.map",
-    "main.9289f010.js.map": "/victoria-portfolio/static/js/main.9289f010.js.map"
+    "main.6057c69e.js.map": "/victoria-portfolio/static/js/main.6057c69e.js.map"
   },
   "entrypoints": [
     "static/css/main.ad0b8118.css",
-    "static/js/main.9289f010.js"
+    "static/js/main.6057c69e.js"
   ]
 }
