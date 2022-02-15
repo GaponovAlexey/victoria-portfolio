@@ -5,14 +5,15 @@ import Slider from 'react-slick'
 
 export const ComentsPhoto = () => {
   const { comentImg, LanguageENG } = useSelector((state) => state.data)
+  
   const settings = {
     focusOnSelect: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 4,
+    autoplaySpeed: 4000,
+    slidesToShow: comentImg ? 4 : 2,
     slidesToScroll: 1,
-    speed: 1000,
+    speed: 2000,
     dots: true,
   }
 
@@ -62,6 +63,8 @@ export const ComentsPhoto = () => {
                       height: 350px;
                     }
                     @media (max-width: 420px) {
+                      width: 80px;
+                      height: 150px;
                     }
                   `}
                   src={coment.photo}

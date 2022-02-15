@@ -15,6 +15,13 @@ function App() {
       className={css`
         width: 960px;
         margin: 0 auto;
+        @media (max-width: 768px) {
+          max-width: 710px;
+        }
+
+        @media (max-width: 420px) {
+          max-width: 350px;
+        }
       `}
     >
       <Header />

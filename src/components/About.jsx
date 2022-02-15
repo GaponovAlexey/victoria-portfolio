@@ -10,9 +10,7 @@ export const About = () => {
         @media (max-width: 768px) {
           max-width: 710px;
         }
-        @media (max-width: 567px) {
-          max-width: 520px;
-        }
+        
         @media (max-width: 420px) {
           max-width: 350px;
         }
