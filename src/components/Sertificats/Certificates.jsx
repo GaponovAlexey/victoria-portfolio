@@ -13,6 +13,10 @@ export const Certificates = () => {
     slidesToScroll: 1,
     speed: 500,
     dots: true,
+    fade: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
   }
 
   return (
@@ -21,7 +25,6 @@ export const Certificates = () => {
         @media (max-width: 768px) {
           max-width: 710px;
         }
-        
         @media (max-width: 420px) {
           max-width: 350px;
         }
@@ -56,7 +59,7 @@ export const Certificates = () => {
                   width: 270px;
                   height: 300px;
                 }
-               
+
                 @media (max-width: 420px) {
                   width: 170px;
                   height: 200px;
@@ -97,7 +100,7 @@ export const Certificates = () => {
                     height: 300px;
                   }
                   @media (max-width: 420px) {
-                    width: 250px;
+                    width: 300px;
                     margin: 0 auto;
                     height: 200px;
                   `}

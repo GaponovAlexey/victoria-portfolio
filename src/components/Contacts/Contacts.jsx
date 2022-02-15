@@ -10,12 +10,11 @@ export const Contacts = () => {
     <div
       className={css`
         @media (max-width: 768px) {
-          width: 350px;
-          height: 300px;
+          max-width: 710px;
         }
+
         @media (max-width: 420px) {
-          width: 360px;
-          height: 300px;
+          max-width: 350px;
         }
       `}
     >
