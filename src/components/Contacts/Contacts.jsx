@@ -1,11 +1,14 @@
 import { css } from '@emotion/css'
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import insta from '../../img/svg/insta.svg'
+import what from '../../img/svg/whatsapp.svg'
+import { isLanguageENG } from '../../Redux/reducer'
 
 export const Contacts = () => {
   const { LanguageENG } = useSelector((state) => state.data)
+  const dispatch = useDispatch()
   return (
     <div
       className={css`
@@ -42,58 +45,58 @@ export const Contacts = () => {
               width: 273px;
               margin: 0 auto;
               margin-top: 20px;
+              margin-bottom: 20px;
             `}
           >
             {LanguageENG
               ? 'Want to know more or just chat? You are welcome!'
               : 'Хотите узнать больше или просто спросить? Пожалуйста! '}
           </div>
-          <div
-            className={css`
-              display: inline-block;
-              background-color: black;
-              border-radius: 50px;
-              margin-top: 30px;
-            `}
-          >
-            <a href='https://wa.me/79811654228?text=Я%20хочу%20у%20вас%20спросить'>
-              <div
-                className={css`
-                  width: 180.5px;
-                  height: 42px;
-                  justify-content: center;
-                  display: flex;
-                  flex-wrap: wrap;
-                  align-items: center;
-                  color: white;
-                `}
-              >
-                {LanguageENG ? 'Send message' : 'WhatsApp'}
-              </div>
-            </a>
-          </div>
-          <div
-            className={css`
-              padding-top: 91px;
-            `}
-          >
-            <a href='https://www.instagram.com/pedicurecomenda/'>
-              <img
-                className={css`
-                  height: 5%;
-                  width: 5%;
-                `}
-                src={insta}
-                alt='insta'
-              />
-            </a>
+          <div  >
+            <span>
+              <a href='https://wa.me/79811654228?text=Я%20хочу%20у%20вас%20спросить'>
+                <img
+                  className={css`
+                    height: 5%;
+                    width: 5%;
+                  `}
+                  src={what}
+                  alt='whatsapp'
+                />
+              </a>
+            </span>
+            <span className={css` margin-left: 20px; `} >
+              <a href='https://www.instagram.com/pedicurecomenda/'>
+                <img
+                  className={css`
+                    height: 5%;
+                    width: 5%;
+                  `}
+                  src={insta}
+                  alt='insta'
+                />
+              </a>
+            </span>
           </div>
           <div
             className={css`
               padding-top: 20px;
             `}
           >
-            Like me on Instagram
+           Подпишись на меня в Instagram
+          </div>
+          <div>
+            <div
+              className={css`
+                text-align: center;
+                font-size: 22px;
+                margin-bottom: 10px;
+              `}
+            >
+              <span onClick={() => dispatch(isLanguageENG(false))}>RU </span> |{' '}
+              {''}
+              <span onClick={() => dispatch(isLanguageENG(true))}>ENG </span>
+            </div>
           </div>
         </div>
       </div>

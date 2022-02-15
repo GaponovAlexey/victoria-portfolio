@@ -47,7 +47,7 @@ export const Certificates = () => {
         >
           {LanguageENG ? 'Certificates' : 'Сертификаты'}
         </h3>
-        <div>
+        <div className={css`max-width: 470px; margin: 0 auto; `} >
           <Slider {...settings}>
             <div
               className={css`
