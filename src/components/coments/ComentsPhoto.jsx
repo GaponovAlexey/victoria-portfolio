@@ -4,9 +4,7 @@ import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
 export const ComentsPhoto = () => {
-  const { comentImg, LanguageENG } = useSelector(
-    (state) => state.data
-  )
+  const { comentImg, LanguageENG } = useSelector((state) => state.data)
   const settings = {
     focusOnSelect: true,
     infinite: true,
@@ -22,18 +20,18 @@ export const ComentsPhoto = () => {
     <div
       className={css`
         position: relative;
+        @media (max-width: 768px) {
+          max-width: 710px;
+        }
+        @media (max-width: 567px) {
+          max-width: 520px;
+        }
+        @media (max-width: 420px) {
+          max-width: 350px;
+          height: auto;
+        }
       `}
     >
-      <div
-        className={css`
-          position: absolute;
-          background: #f6f6f6;
-          left: -500px;
-          height: 480px;
-          z-index: -1;
-          padding-bottom: 40px;
-        `}
-      ></div>
       <div
         className={css`
           margin-bottom: 60px;
@@ -59,6 +57,12 @@ export const ComentsPhoto = () => {
                   className={css`
                     width: 200px;
                     height: 380px;
+                    @media (max-width: 768px) {
+                      width: 170px;
+                      height: 350px;
+                    }
+                    @media (max-width: 420px) {
+                    }
                   `}
                   src={coment.photo}
                   alt='ph1'
@@ -67,7 +71,6 @@ export const ComentsPhoto = () => {
             ))}
           </Slider>
         </div>
-
       </div>
     </div>
   )

@@ -7,7 +7,18 @@ import insta from '../../img/svg/insta.svg'
 export const Contacts = () => {
   const { LanguageENG } = useSelector((state) => state.data)
   return (
-    <div>
+    <div
+      className={css`
+        @media (max-width: 768px) {
+          width: 350px;
+          height: 300px;
+        }
+        @media (max-width: 420px) {
+          width: 360px;
+          height: 300px;
+        }
+      `}
+    >
       <div>
         <h2
           className={css`

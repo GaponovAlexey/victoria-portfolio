@@ -23,7 +23,7 @@ function App() {
       <HomepageTop />
       <HeaderImg />
       <About />
-      <SkillsHome />
+      {/* <SkillsHome /> */}
       <ComentsPhoto />
       <Certificates />
       <Map />

@@ -5,7 +5,18 @@ import { useSelector } from 'react-redux'
 export const Map = () => {
   const { LanguageENG } = useSelector((state) => state.data)
   return (
-    <div>
+    <div
+      className={css`
+        @media (max-width: 768px) {
+          width: 350px;
+          height: 300px;
+        }
+        @media (max-width: 420px) {
+          width: 360px;
+          height: 300px;
+        }
+      `}
+    >
       <div
         className={css`
           margin: 30px 0;
@@ -21,6 +32,7 @@ export const Map = () => {
         className={css`
           position: relative;
           background-color: red;
+          
         `}
       >
         <div

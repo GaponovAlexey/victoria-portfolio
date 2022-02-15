@@ -9,6 +9,14 @@ export const HeaderImg = () => {
       className={css`
         padding-bottom: 30px;
         position: relative;
+        @media (max-width: 768px) {
+          width: 350px;
+          height: 300px;
+        }
+        @media (max-width: 420px) {
+          width: 360px;
+          height: 300px;
+        }
       `}
     >
       <img

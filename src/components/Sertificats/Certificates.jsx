@@ -9,7 +9,7 @@ export const Certificates = () => {
   const settings = {
     focusOnSelect: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
     dots: true,
@@ -18,19 +18,15 @@ export const Certificates = () => {
   return (
     <div
       className={css`
-        position: relative;
-        background: #fff;
+        @media (max-width: 768px) {
+          max-width: 710px;
+        }
+        
+        @media (max-width: 420px) {
+          max-width: 350px;
+        }
       `}
     >
-      <div
-        className={css`
-          position: absolute;
-          left: -500px;
-          height: 480px;
-          z-index: -1;
-          padding-bottom: 40px;
-        `}
-      ></div>
       <div
         className={css`
           margin-bottom: 60px;
@@ -56,6 +52,18 @@ export const Certificates = () => {
                 margin: o auto;
                 width: 370px;
                 height: 400px;
+                @media (max-width: 768px) {
+                  width: 270px;
+                  height: 300px;
+                }
+               
+                @media (max-width: 420px) {
+                  width: 170px;
+                  height: 200px;
+                  settings: {
+                    slidestoshow: 1;
+                  }
+                }
               `}
             >
               <div
@@ -81,8 +89,17 @@ export const Certificates = () => {
               <div key={coment.id}>
                 <img
                   className={css`
-                    width: 470px;
-                    height: 400px;
+                  width: 470px;
+                  height: 400px;
+                  @media (max-width: 768px) {
+                    width: 350px;
+                    margin: 0 auto;
+                    height: 300px;
+                  }
+                  @media (max-width: 420px) {
+                    width: 250px;
+                    margin: 0 auto;
+                    height: 200px;
                   `}
                   src={coment.certificate}
                   alt='sertificate'
