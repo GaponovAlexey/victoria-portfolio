@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/victoria-portfolio/static/css/main.ad0b8118.css",
+    "main.js": "/victoria-portfolio/static/js/main.9289f010.js",
+    "static/media/4.jpg": "/victoria-portfolio/static/media/4.70ed71829f44c9277c67.jpg",
+    "static/media/1.jpg": "/victoria-portfolio/static/media/1.5ffa49049e1d612a7d47.jpg",
+    "static/media/2.jpg": "/victoria-portfolio/static/media/2.9ba369beaf1f62acc3b5.jpg",
+    "static/media/3.jpg": "/victoria-portfolio/static/media/3.3c99b67b50774cc54a5b.jpg",
+    "static/media/7-min.jpg": "/victoria-portfolio/static/media/7-min.78d299798a2bd0a58f27.jpg",
+    "static/media/p3.jpg": "/victoria-portfolio/static/media/p3.1785c2a26f9bb013ad78.jpg",
+    "static/media/p1.jpg": "/victoria-portfolio/static/media/p1.b235444d71a546edf17c.jpg",
+    "static/media/9-min.jpg": "/victoria-portfolio/static/media/9-min.9480645803ed22a8c625.jpg",
+    "static/media/6.jpg": "/victoria-portfolio/static/media/6.093cd50cd624580247bd.jpg",
+    "static/media/8-min.jpg": "/victoria-portfolio/static/media/8-min.ef3c85777ca27d6077dd.jpg",
+    "static/media/p4.jpg": "/victoria-portfolio/static/media/p4.6205acce9da43215d5e7.jpg",
+    "static/media/10-min.jpg": "/victoria-portfolio/static/media/10-min.63fcf3c9c102a9d742e2.jpg",
+    "static/media/5-min.jpg": "/victoria-portfolio/static/media/5-min.ef98670312bda1a36146.jpg",
+    "static/media/3-min.jpg": "/victoria-portfolio/static/media/3-min.191e9c35b80fde2db8f4.jpg",
+    "static/media/1-min.jpg": "/victoria-portfolio/static/media/1-min.895ce860aa8df8b5d628.jpg",
+    "static/media/7.jpg": "/victoria-portfolio/static/media/7.e4564633473f877499a1.jpg",
+    "static/media/p2.jpg": "/victoria-portfolio/static/media/p2.c278eec433c39b755058.jpg",
+    "static/media/6-min.jpg": "/victoria-portfolio/static/media/6-min.07f0a1c61f43a4a40744.jpg",
+    "static/media/Gilroy-Medium.woff": "/victoria-portfolio/static/media/Gilroy-Medium.2bc7f5d7ea77ee1bddb3.woff",
+    "static/media/Gilroy-Bold.woff": "/victoria-portfolio/static/media/Gilroy-Bold.5fb38b9fa452b5814397.woff",
+    "static/media/4-min.jpg": "/victoria-portfolio/static/media/4-min.35f4beb1d4a54dcad43f.jpg",
+    "static/media/2-min.jpg": "/victoria-portfolio/static/media/2-min.73f4ca7bdf7b787b0753.jpg",
+    "static/media/whatsapp.svg": "/victoria-portfolio/static/media/whatsapp.62547d953954b66f1bd5b20a2b5b2305.svg",
+    "static/media/slick.svg": "/victoria-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/victoria-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/victoria-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/victoria-portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/insta.svg": "/victoria-portfolio/static/media/insta.7e802eefab735442ca661298d26c7a2f.svg",
+    "index.html": "/victoria-portfolio/index.html",
+    "main.ad0b8118.css.map": "/victoria-portfolio/static/css/main.ad0b8118.css.map",
+    "main.9289f010.js.map": "/victoria-portfolio/static/js/main.9289f010.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad0b8118.css",
+    "static/js/main.9289f010.js"
+  ]
+}
