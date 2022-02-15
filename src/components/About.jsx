@@ -10,7 +10,6 @@ export const About = () => {
         @media (max-width: 768px) {
           max-width: 710px;
         }
-        
         @media (max-width: 420px) {
           max-width: 350px;
         }
@@ -22,6 +21,13 @@ export const About = () => {
           text-align: center;
           line-height: 42px;
           marign: 0 auto;
+          @media (max-width: 768px) {
+            padding-top: 142px;
+            
+          }
+          @media (max-width: 420px) {
+            padding-top: 0;
+          }
         `}
       >
         <h2
@@ -30,15 +36,21 @@ export const About = () => {
             font-family: GilroyBold;
             font-size: 34px;
             line-height: 42px;
+            margin: 20px;
           `}
         >
-          {LanguageENG ? `About me` : `Кто я`}
+          {LanguageENG ? `About me` : `Обо мне`}
         </h2>
         <p
           className={css`
             font-size: 21px;
-            line-height: 42px;
-            padding-bottom: 107px;
+            line-height: 32px;
+            @media (max-width: 420px) {
+              padding-bottom: 30px;
+              padding-top: 0;
+              line-height: 22px;
+              font-size: 16px;
+            }
           `}
         >
           {LanguageENG

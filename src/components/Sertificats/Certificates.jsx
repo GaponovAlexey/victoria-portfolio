@@ -51,7 +51,9 @@ export const Certificates = () => {
           <Slider {...settings}>
             <div
               className={css`
-                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
                 margin: o auto;
                 width: 370px;
                 height: 400px;

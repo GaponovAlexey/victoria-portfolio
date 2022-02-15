@@ -7,15 +7,13 @@ export const HeaderImg = () => {
   return (
     <div
       className={css`
-        padding-bottom: 30px;
-        position: relative;
         @media (max-width: 768px) {
           width: 350px;
           height: 300px;
         }
         @media (max-width: 420px) {
-          width: 360px;
-          height: 300px;
+          width: 350px;
+          height: 220px;
         }
       `}
     >
@@ -27,16 +25,11 @@ export const HeaderImg = () => {
           height: 400px;
           padding-top: 20px;
           @media (max-width: 768px) {
-            max-width: 740px;
+            max-width: 710px;
             object-position: 0px -260px;
           }
-          @media (max-width: 567px) {
-            max-width: 520px;
-            object-position: 0px -190px;
-            height: 300px;
-          }
           @media (max-width: 420px) {
-            max-width: 350px;
+            max-width: 320px;
             object-position: 0px -90px;
             height: 200px;
           }

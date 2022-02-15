@@ -65,7 +65,7 @@ export const Header = () => {
         )}
         <li>{LanguageENG ? 'Home' : 'Главная'}</li>
         <li>{LanguageENG ? 'About' : 'Обо мне'}</li>
-        <li>{LanguageENG ? 'Skills' : 'Навыки'}</li>
+        <li>{LanguageENG ? 'Skills' : 'Услуги'}</li>
         <li>{LanguageENG ? 'Comments' : 'Отзывы'}</li>
         <li>{LanguageENG ? 'Certificates' : 'Сертификаты'}</li>
         <li>{LanguageENG ? 'Contacts' : 'Контакты'}</li>
