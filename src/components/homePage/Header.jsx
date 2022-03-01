@@ -1,21 +1,56 @@
 import { css } from '@emotion/css'
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 
 export const Header = () => {
   const { LanguageENG } = useSelector((state) => state.data)
   const [Isactive, setIsactive] = useState(true)
 
+  useLayoutEffect(() => {
+    const smoothScroll = function (targetEl, duration) {
+      const headerElHeight = document.querySelector('.header').clientHeight
+      let target = document.querySelector(targetEl)
+      let targetPosition = target.getBoundingClientRect().top - headerElHeight
+      let startPosition = window.pageYOffset
+      let startTime = null
+
+      const ease = function (t, b, c, d) {
+        t /= d / 2
+        if (t < 1) return (c / 2) * t * t + b
+        t--
+        return (-c / 2) * (t * (t - 2) - 1) + b
+      }
+
+      const animation = function (currentTime) {
+        if (startTime === null) startTime = currentTime
+        const timeElapsed = currentTime - startTime
+        const run = ease(timeElapsed, startPosition, targetPosition, duration)
+        window.scrollTo(0, run)
+        if (timeElapsed < duration) requestAnimationFrame(animation)
+      }
+      requestAnimationFrame(animation)
+    }
+
+    const scrollTo = function () {
+      const links = document.querySelectorAll('.js-scroll')
+      links.forEach((each) => {
+        each.addEventListener('click', function () {
+          const currentTarget = this.getAttribute('href')
+          smoothScroll(currentTarget, 1000)
+        })
+      })
+    }
+    scrollTo()
+  }, [])
+
   return (
     <header
-      className={css`
-        position: fixed;
-        z-index: 20;
-      `}
+      className={'header'}
     >
       <div
- 
         className={css`
+        position: fixed;
+        z-index: 20;
           ${Isactive &&
           `@media (max-width: 769px) {
               display: none;
@@ -65,25 +100,27 @@ export const Header = () => {
           </div>
         )}
         <li>
-          <a href='#home'>{LanguageENG ? 'Home' : 'Главная'}</a>
+          <a className='js-scroll' href='#home'>
+            {LanguageENG ? 'Home' : 'Главная'}
+          </a>
         </li>
         <li>
-          <a href='#about'>{LanguageENG ? 'About' : 'Обо мне'}</a>
+          <a  className='js-scroll' href='#about'>{LanguageENG ? 'About' : 'Обо мне'}</a>
         </li>
-        {/* <li><a href="#skils">{LanguageENG ? 'Skills' : 'Услуги'}</a></li> */}
+        {/* <li><a className='js-scroll' href="#skils">{LanguageENG ? 'Skills' : 'Услуги'}</a></li> */}
         <li>
-          <a href='#comments'>{LanguageENG ? 'Comments' : 'Отзывы'}</a>
+          <a className='js-scroll' href='#comments'>{LanguageENG ? 'Comments' : 'Отзывы'}</a>
         </li>
         <li>
-          <a href='#certificates'>
+          <a className='js-scroll' href='#certificates'>
             {LanguageENG ? 'Certificates' : 'Сертификаты'}
           </a>
         </li>
         <li>
-          <a href='#contacts'>{LanguageENG ? 'Contacts' : 'Контакты'}</a>
+          <a className='js-scroll' href='#map'>{LanguageENG ? 'Map' : 'Как меня найти'}</a>
         </li>
         <li>
-          <a href='#map'>{LanguageENG ? 'Map' : 'Как меня найти'}</a>
+          <a className='js-scroll' href='#contacts'>{LanguageENG ? 'Contacts' : 'Контакты'}</a>
         </li>
       </div>
 
