@@ -21,6 +21,7 @@ export const Certificates = () => {
 
   return (
     <div
+      id='certificates'
       className={css`
         @media (max-width: 768px) {
           max-width: 710px;
@@ -47,7 +48,12 @@ export const Certificates = () => {
         >
           {LanguageENG ? 'Certificates' : 'Сертификаты'}
         </h3>
-        <div className={css`max-width: 470px; margin: 0 auto; `} >
+        <div
+          className={css`
+            max-width: 470px;
+            margin: 0 auto;
+          `}
+        >
           <Slider {...settings}>
             <div
               className={css`

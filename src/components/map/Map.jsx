@@ -6,14 +6,15 @@ export const Map = () => {
   const { LanguageENG } = useSelector((state) => state.data)
   return (
     <div
+      id='map'
       className={css`
-      @media (max-width: 768px) {
-        max-width: 710px;
-      }
+        @media (max-width: 768px) {
+          max-width: 710px;
+        }
 
-      @media (max-width: 420px) {
-        max-width: 350px;
-      }
+        @media (max-width: 420px) {
+          max-width: 350px;
+        }
       `}
     >
       <div
@@ -31,7 +32,6 @@ export const Map = () => {
         className={css`
           position: relative;
           background-color: red;
-          
         `}
       >
         <div

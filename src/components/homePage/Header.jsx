@@ -14,6 +14,7 @@ export const Header = () => {
       `}
     >
       <div
+ 
         className={css`
           ${Isactive &&
           `@media (max-width: 769px) {
@@ -63,13 +64,27 @@ export const Header = () => {
             &#10060;
           </div>
         )}
-        <li>{LanguageENG ? 'Home' : 'Главная'}</li>
-        <li>{LanguageENG ? 'About' : 'Обо мне'}</li>
-        <li>{LanguageENG ? 'Skills' : 'Услуги'}</li>
-        <li>{LanguageENG ? 'Comments' : 'Отзывы'}</li>
-        <li>{LanguageENG ? 'Certificates' : 'Сертификаты'}</li>
-        <li>{LanguageENG ? 'Contacts' : 'Контакты'}</li>
-        <li>{LanguageENG ? 'Map' : 'Как меня найти'}</li>
+        <li>
+          <a href='#home'>{LanguageENG ? 'Home' : 'Главная'}</a>
+        </li>
+        <li>
+          <a href='#about'>{LanguageENG ? 'About' : 'Обо мне'}</a>
+        </li>
+        {/* <li><a href="#skils">{LanguageENG ? 'Skills' : 'Услуги'}</a></li> */}
+        <li>
+          <a href='#comments'>{LanguageENG ? 'Comments' : 'Отзывы'}</a>
+        </li>
+        <li>
+          <a href='#certificates'>
+            {LanguageENG ? 'Certificates' : 'Сертификаты'}
+          </a>
+        </li>
+        <li>
+          <a href='#contacts'>{LanguageENG ? 'Contacts' : 'Контакты'}</a>
+        </li>
+        <li>
+          <a href='#map'>{LanguageENG ? 'Map' : 'Как меня найти'}</a>
+        </li>
       </div>
 
       <div

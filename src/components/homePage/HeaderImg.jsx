@@ -6,6 +6,7 @@ import logoImg from '../../img/2.jpg'
 export const HeaderImg = () => {
   return (
     <div
+      id='home'
       className={css`
         @media (max-width: 768px) {
           width: 350px;

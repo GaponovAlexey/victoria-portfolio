@@ -12,6 +12,7 @@ import { SkillsHome } from './components/Skils/SkillsHome'
 function App() {
   return (
     <div
+    id='home'
       className={css`
         width: 960px;
         margin: 0 auto;

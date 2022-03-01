@@ -6,6 +6,7 @@ export const About = () => {
   const { LanguageENG } = useSelector((state) => state.data)
   return (
     <div
+    id='about'
       className={css`
         @media (max-width: 768px) {
           max-width: 710px;
@@ -30,6 +31,7 @@ export const About = () => {
         `}
       >
         <h2
+        
           className={css`
             text-align: center;
             font-family: GilroyBold;

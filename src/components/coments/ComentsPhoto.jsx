@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 
 export const ComentsPhoto = () => {
   const { comentImg, LanguageENG } = useSelector((state) => state.data)
-  
+
   const settings = {
     focusOnSelect: true,
     infinite: true,
@@ -19,6 +19,7 @@ export const ComentsPhoto = () => {
 
   return (
     <div
+      id='comments'
       className={css`
         position: relative;
         @media (max-width: 768px) {
