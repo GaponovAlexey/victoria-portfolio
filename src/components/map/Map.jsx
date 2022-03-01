@@ -31,7 +31,6 @@ export const Map = () => {
       <div
         className={css`
           position: relative;
-          background-color: red;
         `}
       >
         <div
