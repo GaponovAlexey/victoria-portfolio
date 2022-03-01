@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/victoria-portfolio/static/css/main.ad0b8118.css",
-    "main.js": "/victoria-portfolio/static/js/main.6057c69e.js",
+    "main.css": "/victoria-portfolio/static/css/main.56edfd31.css",
+    "main.js": "/victoria-portfolio/static/js/main.d11318e1.js",
     "static/media/4.jpg": "/victoria-portfolio/static/media/4.70ed71829f44c9277c67.jpg",
     "static/media/1.jpg": "/victoria-portfolio/static/media/1.5ffa49049e1d612a7d47.jpg",
     "static/media/2.jpg": "/victoria-portfolio/static/media/2.9ba369beaf1f62acc3b5.jpg",
@@ -31,11 +31,11 @@
     "static/media/slick.woff": "/victoria-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "static/media/insta.svg": "/victoria-portfolio/static/media/insta.7e802eefab735442ca661298d26c7a2f.svg",
     "index.html": "/victoria-portfolio/index.html",
-    "main.ad0b8118.css.map": "/victoria-portfolio/static/css/main.ad0b8118.css.map",
-    "main.6057c69e.js.map": "/victoria-portfolio/static/js/main.6057c69e.js.map"
+    "main.56edfd31.css.map": "/victoria-portfolio/static/css/main.56edfd31.css.map",
+    "main.d11318e1.js.map": "/victoria-portfolio/static/js/main.d11318e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad0b8118.css",
-    "static/js/main.6057c69e.js"
+    "static/css/main.56edfd31.css",
+    "static/js/main.d11318e1.js"
   ]
 }
